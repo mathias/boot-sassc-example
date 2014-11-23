@@ -5,7 +5,7 @@
                   [tailrecursion/boot-useful "0.1.3"      :scope "test"]])
 
 (require '[tailrecursion.boot-useful :refer :all])
-(require '[boot-sassc/core :refer :all])
+(require '[boot-sassc.core :refer :all])
 
 (def +version+ "0.0.1")
 
