@@ -1,10 +1,11 @@
 (set-env!
   :dependencies '[[org.clojure/clojure       "1.6.0"       :scope "provided"]
                   [boot/core                 "2.0.0-pre27" :scope "provided"]
-                  [boot-garden                "0.0.1"       :scope "test"]
+                  [boot-sassc                "0.0.1"       :scope "test"]
                   [tailrecursion/boot-useful "0.1.3"      :scope "test"]])
 
 (require '[tailrecursion.boot-useful :refer :all])
+(require '[boot-sassc/core :refer :all])
 
 (def +version+ "0.0.1")
 
