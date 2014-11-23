@@ -1,0 +1,16 @@
+$brand-orange: #FF6138;
+$brand-yellow: #FFFF9D;
+$brand-seagreen: #00A388;
+
+h1 {
+  color: $brand-orange;
+}
+
+table {
+  border: 0;
+  tr {
+    border: 1px solid $brand-seagreen;
+  }
+}
+
+
