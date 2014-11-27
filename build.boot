@@ -21,7 +21,15 @@
         :license     {:name "Eclipse Public License"
                       :url  "http://www.eclipse.org/legal/epl-v10.html"}])
 
-(deftask run
-  "Generate CSS from SCSS and watch for future changes"
+(deftask compile-foundation
+  "Generate CSS from the Foundation (Sass) Template"
   []
-  (comp (watch)))
+  (comp (watch) (sass :sass-file "sass/app.scss"
+                      :output-to "main.css"
+                      :line-numbers true
+                      :source-maps true)))
+
+(deftask simple-scss
+  "Compile CSS from a simple SCSS file"
+  []
+  (comp (watch) (sass :sass-file "sass/main.scss")))
