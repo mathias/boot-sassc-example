@@ -3,7 +3,7 @@
                   [boot/core           "2.1.2"  :scope "provided"]
                   [mathias/boot-sassc  "0.1.4"]
                   [adzerk/bootlaces    "0.1.11" :scope "test"]]
-    :src-paths #{"sass/"})
+    :resource-paths #{"sass/"})
 
 (require '[adzerk.bootlaces :refer :all])
 (require '[mathias.boot-sassc :refer :all])
